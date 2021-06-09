@@ -18,7 +18,7 @@ class GallerySeeder extends Seeder
     {
         DB::table('Galleries')->insert([[
             'travel_packages_id' => '1',
-            'image' => 'assets/gallery/1a.jpeg',
+            'image' => 'assets/gallery/1a.jpg',
         ],
         [
             'travel_packages_id' => '1',
@@ -38,7 +38,7 @@ class GallerySeeder extends Seeder
         ],
         [
             'travel_packages_id' => '2',
-            'image' => 'assets/gallery/2a.jpeg',
+            'image' => 'assets/gallery/2a.jpg',
         ],
         [
             'travel_packages_id' => '2',
@@ -58,7 +58,7 @@ class GallerySeeder extends Seeder
         ],
         [
             'travel_packages_id' => '3',
-            'image' => 'assets/gallery/3a.jpeg',
+            'image' => 'assets/gallery/3a.jpg',
         ],
         [
             'travel_packages_id' => '3',
@@ -78,7 +78,7 @@ class GallerySeeder extends Seeder
         ],
         [
             'travel_packages_id' => '4',
-            'image' => 'assets/gallery/4a.jpeg',
+            'image' => 'assets/gallery/4a.jpg',
         ],
         [
             'travel_packages_id' => '4',

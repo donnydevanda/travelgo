@@ -1,4 +1,4 @@
-@extends('layouts.detail')
+@extends('layouts.app')
 @section('title', 'Package Detail')
 
 @section('content')
