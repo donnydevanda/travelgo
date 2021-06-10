@@ -42,7 +42,7 @@
     </div>
 
     <div class="container-fluid">
-        <div class="row border-top justify-content-center allign-items-center pt-4">
+        <div class="row border-top justify-content-center text-center pt-4">
             2021 Copyright Travelgo • All rights reserved • Made in South Jakarta
         </div>
     </div>

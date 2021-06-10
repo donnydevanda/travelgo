@@ -253,13 +253,17 @@ header .btn-get-started:hover {
   color: #FFFFFF;
 }
 
-/* Detail - XXX*/
+
+/* ----- Detail ----- */
+
+/*  Section Details Header */
 .section-details-header {
   min-height: 310px;
   background: #E4E6EB;
   margin-top: -75px;
 }
 
+/*  Section Details Content */
 .section-details-content {
   margin-top: -210px;
   min-height: 100vh;
@@ -300,13 +304,13 @@ header .btn-get-started:hover {
   color: #B1B1B1;
 }
 
-.card-details .trip-information th {
-  font-weight: 300;
+.card-details .trip-information {
+  font-weight: 400;
   font-size: 18px;
   color: #071C4D;
 }
 
-.card-details .trip-information td {
+.card-details .trip-information .text-right {
   font-weight: 300;
   font-size: 18px;
   color: #B1B1B1;
@@ -380,11 +384,6 @@ header .btn-get-started:hover {
   color: #FFFFFF;
 }
 
-.card-right {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
 .features {
   margin-top: 20px;
 }
@@ -440,7 +439,6 @@ header .btn-get-started:hover {
 .btn-join-now {
   background-color: #F87C1D;
   color: #FFFFFF;
-  border-radius: 0;
 }
 
 .btn-join-now.hover {

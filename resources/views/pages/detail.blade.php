@@ -4,56 +4,62 @@
 @section('content')
 <main>
     <section class="section-details-header"></section>
-     <section class="section-details-content">
-         <div class="container">
-             <div class="row">
-                 <div class="col">
-                    <ul class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            Travel Package
-                        </li>
-                        <li class="breadcrumb-item active">
-                            Details
-                        </li>
-                    </ul>
-                 </div>
-             </div>
-
+    <section class="section-details-content">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-8 pl-lg-0">
+                <div class="col">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        Travel Package
+                    </li>
+                    <li class="breadcrumb-item active">
+                        Details
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 my-1">
                     <div class="card card-details">
                         <h1>{{ $item->title }}</h1>
                         <p>{{ $item->location }}</p>
                         @if ($item->galleries->count())
-                        <div class="gallery">
-                            <div class="xzoom-container">
-                                <img src="{{ Storage::url($item->galleries->first()->image) }}" alt="" class="xzoom" id="main_image" xoriginal="{{ Storage::url($item->galleries->first()->image) }}">
-                                <div class="xzoom-thumbs">
-                                    @foreach ($item->galleries as $gallery)
-                                    <a href="{{ Storage::url($gallery->image) }}">
-                                        <img src="{{ Storage::url($gallery->image) }}" alt="" class="xzoom-gallery" width="128" xpreview="{{ Storage::url($gallery->image) }}">
-                                    </a>
-                                    @endforeach
+                            <div class="gallery">
+                                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="{{ Storage::url($item->galleries->first()->image) }}" class="d-block w-100" alt="...">
+                                        </div>
+                                        @foreach ($item->galleries as $gallery)
+                                            <div class="carousel-item">
+                                                <img src="{{ Storage::url($gallery->image) }}" class="d-block w-100" alt="...">
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
                                 </div>
                             </div>
-                        </div>
                         @endif
-                        <h2>About Destination</h2>
-                        <p>
-                        {!! $item->about !!}
-                        </p>
-
+                        <h2 class="mt-4">About Destination</h2>
+                        <p>{!! $item->about !!}</p>
                         <div class="features row">
-                            <div class="col-md-4">
-                                <img src="{{url('images/ic_event.png')}}" alt="" class="features-image">
+                            <div class="col-md-4 my-1 border-start">
                                 <div class="description">
+                                    <img src="{{url('images/ic_event.png')}}" alt="" class="features-image">
                                     <div class="description">
                                         <h3>Featured Event</h3>
                                         <p>{{ $item->featured_event }}</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 border-left">
+                            <div class="col-md-4 my-1 border-start">
                                 <div class="description">
                                     <img src="{{url('images/ic_language.png')}}" alt="" class="features-image">
                                     <div class="description">
@@ -62,7 +68,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 border-left">
+                            <div class="col-md-4 my-1 border-start">
                                 <div class="description">
                                     <img src="{{url('images/ic_foods.png')}}" alt="" class="features-image">
                                     <div class="description">
@@ -72,14 +78,12 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
-                <div class="col-lg-4">
-                    <div class="card card-details card-right">
-                        <h2>Members are going</h2>
-                        <div class="members my-2">
+                <div class="col-lg-4 my-1">
+                    <div class="card card-details">
+                        <h2><b>Members are going</b></h2>
+                        <div class="members my-3">
                             <img src="{{url('images/member-1.png')}}" alt="" class="member-image mr-1">
                             <img src="{{url('images/member-2.png')}}" alt="" class="member-image mr-1">
                             <img src="{{url('images/member-3.png')}}" alt="" class="member-image mr-1">
@@ -88,73 +92,37 @@
                         </div>
                         <hr>
                         <h2>Trip information</h2>
-                        <table class="trip-information">
-                            <tr>
-                                <th width="50%">Date of Departure</th>
-                                <td width="50%" class="text-right">
-                                    {{ \Carbon\Carbon::create($item->date_of_departure) -> format('F n, Y')}}
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <th width="50%">Duration</th>
-                                <td width="50%" class="text-right">
-                                    {{ $item->duration }}
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <th width="50%">Type</th>
-                                <td width="50%" class="text-right">
-                                    {{ $item->type }}
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <th width="50%">Price</th>
-                                <td width="50%" class="text-right">
-                                    IDR {{ number_format($item->price) }}
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-
-                    <div class="join-container">
-                        @auth
-                            <form action="{{ route('checkout_process', $item->id)}}" method="post">
+                        <div class="row trip-information mt-2">
+                            <div class="col-6">Date of Departure</div>
+                            <div class="col-6 text-right">{{ \Carbon\Carbon::create($item->date_of_departure) -> format('F n, Y')}}</div>
+                        </div>
+                        <div class="row trip-information mt-2">
+                            <div class="col-6">Duration</div>
+                            <div class="col-6 text-right">{{ $item->duration }}</div>
+                        </div>
+                        <div class="row trip-information mt-2">
+                            <div class="col-6">Type</div>
+                            <div class="col-6 text-right">{{ $item->type }}</div>
+                        </div>
+                        <div class="row trip-information mt-2">
+                            <div class="col-6">Price</div>
+                            <div class="col-6 text-right">IDR {{ number_format($item->price) }}</div>
+                        </div>
+                        <div class="row join-container mt-3">
+                            @auth
+                            <form action="{{ route('checkout-process', $item->id)}}" method="post">
                                 @csrf
-                                <button class="btn btn-block btn-join-now mt-3 py-2" type="submit">
-                                Join Now
-                                </button>
+                                <button class="btn btn-block btn-join-now mt-3 py-2" type="submit">Join Now</button>
                             </form>
-                        @endauth
-                        @guest
-                        <a href="{{ route('login') }}" class="btn btn-block btn-join-now mt-3 py-2">
-                        Login or Register to Join
-                    </a>
-                        @endguest
+                            @endauth
+                            @guest
+                            <a href="{{ route('login') }}" class="btn btn-block btn-join-now mt-3 py-2">Login or Register to Join</a>
+                            @endguest
+                        </div>
                     </div>
                 </div>
             </div>
-         </div>
-     </section>
+        </div>
+    </section>
 </main>
 @endsection
-
-@push('prepend-style')
-    <link rel="stylesheet" href="{{url('libraries/xzoom/xzoom.css')}}"/>
-@endpush
-
-@push('addon-script')
-    <script src="{{url('libraries/xzoom/xzoom.min.js')}}"></script>
-    <script>
-        $(document).ready(function(){
-            $('.xzoom, .xzoom-gallery').xzoom({
-                zoomWidth: 500,
-                title: false,
-                tint:'#333',
-                Xoffset: 15
-            });
-        });
-    </script>
-@endpush

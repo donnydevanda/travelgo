@@ -19,7 +19,7 @@ class UserSeeder extends Seeder
         DB::table('Users')->insert([[
             'username' => 'admin',
             'name' => 'admin',
-            'email' => 'admin@travelgram.com',
+            'email' => 'admin@travelgo.com',
             'email_verified_at' => '2020-12-01',
             'password' => bcrypt('123123123'),
             'roles' => 'ADMIN',
@@ -28,7 +28,7 @@ class UserSeeder extends Seeder
         [
             'username' => 'user',
             'name' => 'user',
-            'email' => 'user@travelgram.com',
+            'email' => 'user@travelgo.com',
             'email_verified_at' => '2020-12-01',
             'password' => bcrypt('123123123'),
             'roles' => 'USER',
