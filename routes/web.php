@@ -31,5 +31,3 @@ Route::prefix('admin')
         Route::resource('transaction', 'TransactionController');
     }
 );
-
-Auth::routes(['verify' => true]);
