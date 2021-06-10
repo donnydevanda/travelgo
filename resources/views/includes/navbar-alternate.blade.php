@@ -2,7 +2,7 @@
 <div class="container">
     <nav class="row navbar navbar-expand-lg navbar-light bg-white px-3">
         <div class="navbar-nav ml-auto mr-auto mr-sm-auto mr-lg-0 mr-md-auto">
-            <a href="{{url('/')}}" class="navbar-brand">Travelgram</a>
+            <a href="{{url('/')}}" class="navbar-brand">Travelgo</a>
         </div>
         <ul class="navbar-nav mr-auto d-none d-lg-block">
             <li>

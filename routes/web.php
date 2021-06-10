@@ -21,15 +21,15 @@ Route::post('/checkout/create/{detail_id}', 'CheckoutController@create') -> name
 Route::get('/checkout/remove/{detail_id}', 'CheckoutController@remove') -> name('checkout-remove') -> middleware(['auth', 'verified']);
 Route::get('/checkout/confirm/{id}', 'CheckoutController@success') -> name('checkout-success') -> middleware(['auth', 'verified']);
 
-
 Route::prefix('admin')
     ->namespace('Admin')
     ->middleware(['auth','admin'])
-    ->group(function(){
+    ->group(function() {
         Route::get('/', 'DashboardController@index')->name('dashboard');
         Route::resource('travel-package', 'TravelPackageController');
         Route::resource('gallery', 'GalleryController');
         Route::resource('transaction', 'TransactionController');
-    });
+    }
+);
 
 Auth::routes(['verify' => true]);

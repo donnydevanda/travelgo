@@ -100,7 +100,7 @@
                                 <button type="submit" class="btn btn-add-now mb-2 px-4">Add Now</button>
                             </form>
                             <h3 class="mt-3 mb-0">Note</h3>
-                            <p class="disclaimer mb-0">You are only able to invite member that has registered in Travelgram.</p>
+                            <p class="disclaimer mb-0">You are only able to invite member that has registered in Travelgo.</p>
                         </div>
                     </div>
                 </div>
@@ -154,7 +154,7 @@
                             <div class="bank-item pb-3">
                                 <img src="{{url('frontend/images/ic_bank.png')}}" alt="" class="bank-image">
                                 <div class="description">
-                                    <h3>PT. Travelgram ID</h3>
+                                    <h3>PT. Travelgo ID</h3>
                                     <p>5271 6789 8877 <br> Bank Central Asia</p>
                                 </div>
                                 <div class="clearfix"></div>
@@ -163,7 +163,7 @@
                             <div class="bank-item pb-3">
                                 <img src="{{url('frontend/images/ic_bank.png')}}" alt="" class="bank-image">
                                 <div class="description">
-                                    <h3>PT. Travelgram ID</h3>
+                                    <h3>PT. Travelgo ID</h3>
                                     <p>6435 5555 6661 <br> Bank Mandiri</p>
                                 </div>
                                 <div class="clearfix"></div>
