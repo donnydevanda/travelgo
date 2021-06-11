@@ -376,6 +376,7 @@ header .btn-get-started:hover {
 }
 
 .card-details .btn-add-now {
+  width: 100%;
   background-color: #071C4D;
   color: #FFFFFF;
 }

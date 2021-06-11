@@ -13,7 +13,12 @@
     </head>
     <body>
         <x-jet-banner />
-        @include('includes.navbar')
+        @if(Request::is('checkout/*'))
+            @include('includes.navbar-alternate')
+        @else
+            @include('includes.navbar')
+        @endif
+        
         @yield('content')
         @include('includes.footer')
 

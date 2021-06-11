@@ -95,9 +95,9 @@ class CheckoutController extends Controller
         //return $transaction;
 
         //EMAIL
-        Mail::to($transaction->user)->send(
-            new TransactionSuccess($transaction)
-        );
+        // Mail::to($transaction->user)->send(
+        //     new TransactionSuccess($transaction)
+        // );
 
         return view('pages.success');
     }
