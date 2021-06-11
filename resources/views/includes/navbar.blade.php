@@ -20,20 +20,16 @@
                 </ul>
             </li>
             <li class="nav-item mx-md-2"><a href="#" class="nav-link">Testimonial</a></li>
-            @guest
-                <button class="btn btn-login px-5 py-2" type="button"
-                onclick="event.preventDefault(); location.href='{{url('login')}}';">
-                    Login
-                </button>
-            @endguest
             @auth
-            <form class="" action="{{url('logout')}}"
-            method="POST">
-            @csrf
-                <button class="btn btn-login px-5 py-2" type="submit">
-                    Logout
-                </button>
+            <li class="nav-item mx-md-2"><a href="{{ route('profile.show') }}" class="nav-link">Account</a></li>  
+            <form class="" action="{{url('logout')}}" method="POST">
+                @csrf
+                <button class="btn btn-login px-5 py-2" type="submit">Logout</button>
+            </form>
             @endauth
+            @guest
+                <button class="btn btn-login px-5 py-2" type="button" onclick="event.preventDefault(); location.href='{{url('login')}}';">Login</button>
+            @endguest     
         </ul>    
     </div>
 </nav>

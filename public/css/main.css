@@ -280,6 +280,7 @@ header .btn-get-started:hover {
   color: #071C4D;
 }
 
+/* Card Details */
 .card-details {
   padding: 30px;
   border-radius: 11px;
@@ -384,6 +385,25 @@ header .btn-get-started:hover {
   color: #FFFFFF;
 }
 
+/* Gallery */
+.gallery .xzoom-container {
+  display: block;
+}
+
+.gallery .xzoom-container .xzoom {
+  width: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 10px;
+}
+
+.gallery .xzoom-container .xactive {
+  border: 4px solid #1A4C9C;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* Features */
 .features {
   margin-top: 20px;
 }
@@ -410,28 +430,13 @@ header .btn-get-started:hover {
   float: left;
 }
 
-.gallery .xzoom-container {
-  display: block;
-}
-
-.gallery .xzoom-container .xzoom {
-  width: 100%;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  margin-bottom: 10px;
-}
-
-.gallery .xzoom-container .xactive {
-  border: 4px solid #1A4C9C;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
+/* Member */
 .member .member-image {
   width: 50px;
   height: 50px;
 }
 
+/* Join */
 .join-container {
   margin-top: -16px;
 }
@@ -439,13 +444,16 @@ header .btn-get-started:hover {
 .btn-join-now {
   background-color: #F87C1D;
   color: #FFFFFF;
+  width: 100%;
 }
 
-.btn-join-now.hover {
+.btn-join-now:hover {
   background-color: #FF9E53;
   color: #FFFFFF;
 }
 
+
+/* asddddddddddddddddddddddddddddddddddd*/
 .section-success {
   height: 90vh;
 }
@@ -472,4 +480,3 @@ header .btn-get-started:hover {
   background-color: #2c4d9b;
   color: #FFFFFF;
 }
-/*# sourceMappingURL=main.css.map */
