@@ -19,7 +19,12 @@
             @include('includes.navbar')
         @endif
         
-        @yield('content')
+        @if(Request::is('user/*'))
+            {{ $slot }}
+        @else
+            @yield('content')
+        @endif
+        
         @include('includes.footer')
 
         @stack('prepend-script')

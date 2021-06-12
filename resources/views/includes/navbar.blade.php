@@ -1,4 +1,4 @@
-<nav class="container navbar navbar-expand-lg navbar-light bg-light">
+<nav class="container navbar navbar-expand-lg navbar-light bg-light max-w-7xl">
     <a class="navbar-brand" href="{{url('/')}}">Travelgo</a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,8 +7,8 @@
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav">
-            <li class="nav-item mx-md-2"><a href="#" class="nav-link active">Home</a></li>
-            <li class="nav-item mx-md-2"><a href="#" class="nav-link">Package</a></li>
+            <li class="nav-item mx-md-2"><a href="{{url('/')}}" class="nav-link {{ Request::is('/') ? 'active' : ''}}">Home</a></li>
+            <li class="nav-item mx-md-2"><a href="#" class="nav-link {{ Request::is('detail/*') ? 'active' : ''}}">Package</a></li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Services
@@ -20,16 +20,21 @@
                 </ul>
             </li>
             <li class="nav-item mx-md-2"><a href="#" class="nav-link">Testimonial</a></li>
+            @if (Auth::user()->roles == 'ADMIN')
+                <li class="nav-item mx-md-2"><a href="{{url('/admin')}}" class="nav-link">Admin</a></li>
+            @else
+                <li class="nav-item mx-md-2"><a href="{{ route('profile.show') }}" class="nav-link {{ Request::is('user/*') ? 'active' : ''}}">Account</a></li>  
+            @endif
             @auth
-            <li class="nav-item mx-md-2"><a href="{{ route('profile.show') }}" class="nav-link">Account</a></li>  
             <form class="" action="{{url('logout')}}" method="POST">
                 @csrf
                 <button class="btn btn-login px-5 py-2" type="submit">Logout</button>
             </form>
             @endauth
             @guest
-                <button class="btn btn-login px-5 py-2" type="button" onclick="event.preventDefault(); location.href='{{url('login')}}';">Login</button>
-            @endguest     
+                <button class="btn btn-login px-4 py-2 mx-md-2" type="button" onclick="event.preventDefault(); location.href='{{url('login')}}';">Login</button>
+                <button class="btn btn-secondary" type="button" onclick="event.preventDefault(); location.href='{{url('register')}}';">Register</button>
+            @endguest    
         </ul>    
     </div>
 </nav>

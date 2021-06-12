@@ -386,24 +386,6 @@ header .btn-get-started:hover {
   color: #FFFFFF;
 }
 
-/* Gallery */
-.gallery .xzoom-container {
-  display: block;
-}
-
-.gallery .xzoom-container .xzoom {
-  width: 100%;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  margin-bottom: 10px;
-}
-
-.gallery .xzoom-container .xactive {
-  border: 4px solid #1A4C9C;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
 /* Features */
 .features {
   margin-top: 20px;
@@ -454,7 +436,9 @@ header .btn-get-started:hover {
 }
 
 
-/* asddddddddddddddddddddddddddddddddddd*/
+/* ----- Success ----- */
+
+/* Section Success */
 .section-success {
   height: 90vh;
 }

@@ -1,11 +1,9 @@
 @extends('layouts.admin')
 
 @section('content')
-<!-- Begin Page Content -->
 <div class="container-fluid">
-    <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">Add Gallery</h1>
+        <h1 class="h3 mb-0 text-gray-800">Add Gallery</h1>
     </div>
 
     @if ($errors->any())
@@ -36,7 +34,7 @@
 
                 <div class="form-group">
                     <label for="image">Image</label>
-                    <input type="file" class="form-control" name="image" placeholder="Image">
+                    <input type="file" class="form-control-file" id="image">
                 </div>
 
                 <button type="submit" class="btn btn-primary btn-block">
@@ -47,6 +45,3 @@
     </div>
 </div>
 @endsection
-
-
-

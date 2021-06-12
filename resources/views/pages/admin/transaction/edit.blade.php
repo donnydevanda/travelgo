@@ -26,7 +26,7 @@
                 @csrf
                <div class="form-group">
                    <label for="transaction_status">Status</label>
-                   <select name="transaction_status" required class="form_control">
+                   <select name="transaction_status" required class="form-control">
                        <option value="{{$item->transaction_status}}">
                            Dont Change ({{$item->transaction_status}})
                        </option>
