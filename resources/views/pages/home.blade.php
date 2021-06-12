@@ -55,7 +55,7 @@
                         <div class="travel-country">{{ $item->location }}</div>
                         <div class="travel-location">{{ $item->title }}</div>
                         <div class="travel-button">
-                            <a href="{{ route('detail', $item->slug)}}" class="btn btn-travel-details px-4">View Details</a>
+                            <a href="{{ route('package-detail', $item->slug)}}" class="btn btn-travel-details px-4">View Details</a>
                         </div>
                     </div>
                 </div>

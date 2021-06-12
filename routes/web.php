@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PackageController;
+use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\Admin\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,19 +17,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@index')->name('home');
-Route::get('/detail/{slug}', 'DetailController@index')->name('detail');
-Route::post('/checkout/{id}', 'CheckoutController@process') -> name('checkout-process') -> middleware(['auth', 'verified']);
-Route::get('/checkout/{id}', 'CheckoutController@index') -> name('checkout') -> middleware(['auth', 'verified']);
-Route::post('/checkout/create/{detail_id}', 'CheckoutController@create') -> name('checkout-create') -> middleware(['auth', 'verified']);
-Route::get('/checkout/remove/{detail_id}', 'CheckoutController@remove') -> name('checkout-remove') -> middleware(['auth', 'verified']);
-Route::get('/checkout/confirm/{id}', 'CheckoutController@success') -> name('checkout-success') -> middleware(['auth', 'verified']);
+Route::get('/', [HomeController::class, 'index']) -> name('home');
+Route::get('/package', [PackageController::class, 'index']) -> name('package');
+Route::get('/package/detail/{id}', [PackageController::class, 'detail']) -> name('package-detail');
+Route::get('/checkout/{id}', [CheckoutController::class, 'index']) -> name('checkout') -> middleware(['auth', 'verified']);
+Route::post('/checkout/{id}', [CheckoutController::class, 'process']) -> name('checkout') -> middleware(['auth', 'verified']);
+Route::post('/checkout/create/{detail_id}', [CheckoutController::class, 'create']) -> name('checkout-create') -> middleware(['auth', 'verified']);
+Route::get('/checkout/remove/{detail_id}', [CheckoutController::class, 'remove']) -> name('checkout-remove') -> middleware(['auth', 'verified']);
+Route::get('/checkout/confirm/{id}', [CheckoutController::class, 'success']) -> name('checkout-success') -> middleware(['auth', 'verified']);
 
 Route::prefix('admin')
     ->namespace('Admin')
     ->middleware(['auth','admin'])
     ->group(function() {
-        Route::get('/', 'DashboardController@index')->name('dashboard');
+        Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
         Route::resource('travel-package', 'TravelPackageController');
         Route::resource('gallery', 'GalleryController');
         Route::resource('transaction', 'TransactionController');

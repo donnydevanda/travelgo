@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav">
             <li class="nav-item mx-md-2"><a href="{{url('/')}}" class="nav-link {{ Request::is('/') ? 'active' : ''}}">Home</a></li>
-            <li class="nav-item mx-md-2"><a href="#" class="nav-link {{ Request::is('detail/*') ? 'active' : ''}}">Package</a></li>
+            <li class="nav-item mx-md-2"><a href="{{url('/package')}}" class="nav-link {{ Request::is('package/*') || Request::is('package') ? 'active' : ''}}">Package</a></li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Services
@@ -20,12 +20,12 @@
                 </ul>
             </li>
             <li class="nav-item mx-md-2"><a href="#" class="nav-link">Testimonial</a></li>
+            @auth
             @if (Auth::user()->roles == 'ADMIN')
                 <li class="nav-item mx-md-2"><a href="{{url('/admin')}}" class="nav-link">Admin</a></li>
             @else
                 <li class="nav-item mx-md-2"><a href="{{ route('profile.show') }}" class="nav-link {{ Request::is('user/*') ? 'active' : ''}}">Account</a></li>  
             @endif
-            @auth
             <form class="" action="{{url('logout')}}" method="POST">
                 @csrf
                 <button class="btn btn-login px-5 py-2" type="submit">Logout</button>

@@ -157,7 +157,7 @@
                             <a href="{{ route('checkout-success', $item -> id) }}" class="btn btn-block btn-join-now py-2">Confirm Payment</a>
                         </div>
                         <div class="text-center">
-                            <a href="{{ route('detail', $item -> travel_package -> slug) }}" class="text-muted">Cancel Booking</a>
+                            <a href="{{ route('package-detail', $item -> travel_package -> slug) }}" class="text-muted">Cancel Booking</a>
                         </div>
                     </div>
                 </div>
