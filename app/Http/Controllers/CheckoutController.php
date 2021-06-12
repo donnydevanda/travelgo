@@ -12,9 +12,8 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class CheckoutController extends Controller
-{
-    public function index(Request $request, $id){
+class CheckoutController extends Controller{
+    public function index(Request $request, $id) {
         $item = Transaction::with(['details', 'travel_package', 'user']) -> findOrFail($id);
         return view('pages.checkout', [
             'item' => $item
@@ -92,12 +91,9 @@ class CheckoutController extends Controller
 
         $transaction -> save();
 
-        //return $transaction;
-
-        //EMAIL
-        // Mail::to($transaction->user)->send(
-        //     new TransactionSuccess($transaction)
-        // );
+        Mail::to($transaction->user)->send(
+            new TransactionSuccess($transaction)
+        );
 
         return view('pages.success');
     }
