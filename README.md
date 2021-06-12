@@ -1,5 +1,4 @@
-# Travelgo
-## _Bootstrap 5 + Laravel 8 Jetstream_
+# Travelgo (Laravel 8)
 
 Travelgo is a travel solution that helps users to discover the beauty of Indonesia. Previously, this app named Travelgram was built in Laravel 7 with Bootstrap 4 around ten months ago. You can try Travelgram through https://github.com/donnydevanda/Travelgram-Laravel.
 
