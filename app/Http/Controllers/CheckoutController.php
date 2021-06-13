@@ -7,7 +7,7 @@ use App\Mail\TransactionSuccess;
 
 use App\Transaction;
 use App\TransactionDetail;
-use App\TravelPackage;
+use App\Models\TravelPackage;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;

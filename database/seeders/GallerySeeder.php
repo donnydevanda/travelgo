@@ -18,83 +18,84 @@ class GallerySeeder extends Seeder
     {
         DB::table('Galleries')->insert([[
             'travel_packages_id' => '1',
-            'image' => 'assets/gallery/1a.jpg',
+            'image' => '1a.webp',
         ],
         [
             'travel_packages_id' => '1',
-            'image' => 'assets/gallery/1b.jpg',
+            'image' => '1b.webp',
         ],
         [
             'travel_packages_id' => '1',
-            'image' => 'assets/gallery/1c.jpg',
-        ],
-        [
-            'travel_packages_id' => '1',
-            'image' => 'assets/gallery/1d.jpg',
-        ],
-        [
-            'travel_packages_id' => '1',
-            'image' => 'assets/gallery/1e.jpg',
+            'image' => '1c.webp',
         ],
         [
             'travel_packages_id' => '2',
-            'image' => 'assets/gallery/2a.jpg',
+            'image' => '2a.webp',
         ],
         [
             'travel_packages_id' => '2',
-            'image' => 'assets/gallery/2b.jpg',
+            'image' => '2b.webp',
         ],
         [
             'travel_packages_id' => '2',
-            'image' => 'assets/gallery/2c.jpg',
-        ],
-        [
-            'travel_packages_id' => '2',
-            'image' => 'assets/gallery/2d.jpg',
-        ],
-        [
-            'travel_packages_id' => '2',
-            'image' => 'assets/gallery/2e.jpg',
+            'image' => '2c.webp',
         ],
         [
             'travel_packages_id' => '3',
-            'image' => 'assets/gallery/3a.jpg',
+            'image' => '3a.webp',
         ],
         [
             'travel_packages_id' => '3',
-            'image' => 'assets/gallery/3b.jpg',
+            'image' => '3b.webp',
         ],
         [
             'travel_packages_id' => '3',
-            'image' => 'assets/gallery/3c.jpg',
-        ],
-        [
-            'travel_packages_id' => '3',
-            'image' => 'assets/gallery/3d.jpg',
-        ],
-        [
-            'travel_packages_id' => '3',
-            'image' => 'assets/gallery/3e.jpg',
+            'image' => '3c.webp',
         ],
         [
             'travel_packages_id' => '4',
-            'image' => 'assets/gallery/4a.jpg',
+            'image' => '4a.webp',
         ],
         [
             'travel_packages_id' => '4',
-            'image' => 'assets/gallery/4b.jpg',
+            'image' => '4b.webp',
         ],
         [
             'travel_packages_id' => '4',
-            'image' => 'assets/gallery/4c.jpg',
+            'image' => '4c.webp',
         ],
         [
-            'travel_packages_id' => '4',
-            'image' => 'assets/gallery/4d.jpg',
+            'travel_packages_id' => '5',
+            'image' => '5a.webp',
         ],
         [
-            'travel_packages_id' => '4',
-            'image' => 'assets/gallery/4e.jpg',
-        ]]);
+            'travel_packages_id' => '5',
+            'image' => '5b.webp',
+        ],
+        [
+            'travel_packages_id' => '6',
+            'image' => '6a.webp',
+        ],
+        [
+            'travel_packages_id' => '6',
+            'image' => '6b.webp',
+        ],
+        [
+            'travel_packages_id' => '7',
+            'image' => '7a.webp',
+        ],
+        [
+            'travel_packages_id' => '7',
+            'image' => '7b.webp',
+        ],
+        [
+            'travel_packages_id' => '8',
+            'image' => '8a.webp',
+        ],
+        [
+            'travel_packages_id' => '8',
+            'image' => '8b.webp',
+        ],
+    ]);
     }
 }

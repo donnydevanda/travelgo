@@ -94,7 +94,7 @@
                         <h2>Trip information</h2>
                         <div class="row trip-information mt-2">
                             <div class="col-6">Date of Departure</div>
-                            <div class="col-6 text-right">{{ \Carbon\Carbon::create($item->date_of_departure) -> format('F n, Y')}}</div>
+                            <div class="col-6 text-right">{{ \Carbon\Carbon::create($item->departure_date) -> format('F n, Y')}}</div>
                         </div>
                         <div class="row trip-information mt-2">
                             <div class="col-6">Duration</div>

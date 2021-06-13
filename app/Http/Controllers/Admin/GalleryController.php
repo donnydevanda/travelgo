@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\GalleryRequest;
-use App\Gallery;
-use App\TravelPackage;
+use App\Models\Gallery;
+use App\Models\TravelPackage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 

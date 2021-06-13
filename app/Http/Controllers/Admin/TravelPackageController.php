@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\TravelPackageRequest;
-use App\TravelPackage;
+use App\Models\TravelPackage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 

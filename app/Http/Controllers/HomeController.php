@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\TravelPackage;
+use App\Models\TravelPackage;
 
 class HomeController extends Controller{
     /**
@@ -12,7 +12,7 @@ class HomeController extends Controller{
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index(){
-        $items = TravelPackage::with(['galleries'])->get();
+        $items = TravelPackage::with(['galleries'])->take(4)->get();
         return view('pages.home',[
             'items' => $items
         ]);

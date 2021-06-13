@@ -25,6 +25,10 @@
                 @method('put')
                 @csrf
                 <div class="form-group">
+                    <label for="category">Category</label>
+                    <input type="number" class="form-control" name="category" placeholder="Category" value="{{$item->categories_id}}">
+                </div>
+                <div class="form-group">
                     <label for="title">Title</label>
                     <input type="text" class="form-control" name="title" placeholder="Title" value="{{$item->title}}">
                 </div>

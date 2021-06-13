@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call(TravelPackageSeeder::class);
+        $this->call(CategorySeeder::class);
         $this->call(GallerySeeder::class);
         $this->call(UserSeeder::class);
     }

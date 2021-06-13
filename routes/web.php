@@ -21,7 +21,7 @@ Route::get('/', [HomeController::class, 'index']) -> name('home');
 Route::get('/package', [PackageController::class, 'index']) -> name('package');
 Route::get('/package/detail/{id}', [PackageController::class, 'detail']) -> name('package-detail');
 Route::get('/checkout/{id}', [CheckoutController::class, 'index']) -> name('checkout') -> middleware(['auth', 'verified']);
-Route::post('/checkout/{id}', [CheckoutController::class, 'process']) -> name('checkout') -> middleware(['auth', 'verified']);
+Route::post('/checkout/{id}', [CheckoutController::class, 'process']) -> name('checkout-post') -> middleware(['auth', 'verified']);
 Route::post('/checkout/create/{detail_id}', [CheckoutController::class, 'create']) -> name('checkout-create') -> middleware(['auth', 'verified']);
 Route::get('/checkout/remove/{detail_id}', [CheckoutController::class, 'remove']) -> name('checkout-remove') -> middleware(['auth', 'verified']);
 Route::get('/checkout/confirm/{id}', [CheckoutController::class, 'success']) -> name('checkout-success') -> middleware(['auth', 'verified']);
