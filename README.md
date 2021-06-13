@@ -17,11 +17,14 @@ Travelgo is a travel solution that helps users to discover the beauty of Indones
 
 #### Installation:
 You can run Travelgo website in your local by following this step.
-https://devmarketer.io/learn/setup-laravel-project-cloned-github-com/
- After following the step before, please run:
+https://devmarketer.io/learn/setup-laravel-project-cloned-github-com/.
+
+After following the step before you can download all image assets from https://drive.google.com/file/d/1d0zWVgzKKCMfcz_QB-A3zicWT1Begwg2/view?usp=sharing, 
+then extract and move all asset to 'storage > app > public', then run:
 ```sh
 php artisan storage:link
 ```
+This project still can work well without image assets.
 
 #### Notes:
 This project is not for commercial use. However, you can download it free and use it for your own purpose.
