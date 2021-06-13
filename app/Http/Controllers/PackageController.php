@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class PackageController extends Controller{
     public function index(Request $request){
-        $items = TravelPackage::with(['galleries'])->get();
+        $items = TravelPackage::where('title', 'LIKE', "%".$request->search."%")->get();
         return view('pages.package',[
             'items' => $items
         ]);

@@ -3,9 +3,17 @@
 
 @section('content')
     <main>
-        <div class="my-5">
-            <section class="section-popular-content" id="popularContent">
-                <div class="container">
+        <div class="package-header"></div>
+        <div class="container package-content">
+            <div class="package-search my-1">
+                <p class="mb-0">Ready to travel?</p>
+                <h1><b>Where do you want to go?</b></h1>
+                <form action="{{ route('package') }}" method="GET" role="search">
+                    <input type="search" class="form-control rounded" name="search" id="search" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                </form>
+            </div>
+            <div class="my-5">
+                <section class="section-popular-content" id="popularContent">
                     <div class="section-popular-travel row justify-content-center">
                         @foreach ($items as $item)
                         <div class="col-sm-6 col-md-4 col-lg-3">
@@ -20,8 +28,8 @@
                         </div>
                         @endforeach
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
     </main>
 @endsection
