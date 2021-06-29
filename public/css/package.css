@@ -1,0 +1,233 @@
+ /* ----- Index ----- */
+
+/* Package Search */
+.package-header{
+    background-color: #071C4D;
+    min-height: 500px;
+    margin-top: -75px;
+    overflow: hidden;
+}
+
+.package-content{
+    margin-top: -380px;
+}
+
+.package-search {
+    color: #ffffff;
+}
+
+.package-search input {
+    height: 50px;
+}
+
+/* Section Popular Content */
+.section-popular-content .section-popular-travel .card-travel {
+    min-height: 380px;
+    max-height: 500px;
+    background-color: #DDDDDD;
+    color: #FFFFFF;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.section-popular-content .section-popular-travel .travel-country {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.section-popular-content .section-popular-travel .travel-location {
+    font-size: 26px;
+    color: #FFFFFF;
+}
+
+.section-popular-content .section-popular-travel .travel-button .btn-travel-details {
+    background-color: #F87C1D;
+    color: #FFFFFF;
+    margin-top: 200px;
+}
+
+.section-popular-content .section-popular-travel .travel-button .btn-travel-details:hover {
+    background-color: #FF9E53;
+}
+
+
+/* ----- Detail ----- */
+  
+/*  Section Details Header */
+.section-details-header {
+    min-height: 310px;
+    background: #E4E6EB;
+    margin-top: -75px;
+}
+
+/*  Section Details Content */
+.section-details-content {
+    margin-top: -210px;
+    min-height: 100vh;
+}
+
+.section-details-content .breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.section-details-content .breadcrumb-item.active {
+    font-weight: bold;
+    color: #071C4D;
+}
+
+/* Card Details */
+.card-details {
+    padding: 30px;
+    border-radius: 11px;
+}
+
+.card-details h1 {
+    font-size: 26px;
+}
+
+.card-details h2 {
+    font-size: 20px;
+}
+
+.card-details h3 {
+    font-weight: 600;
+    font-size: 14px;
+    color: #071C4D;
+}
+
+.card-details p {
+    font-size: 18px;
+    color: #B1B1B1;
+}
+
+.card-details .trip-information {
+    font-weight: 400;
+    font-size: 18px;
+    color: #071C4D;
+}
+
+.card-details .trip-information .text-right {
+    font-weight: 300;
+    font-size: 18px;
+    color: #B1B1B1;
+}
+
+.card-details .trip-information .text-blue {
+    color: #071C4D;
+    font-weight: bold;
+}
+
+.card-details .trip-information .text-orange {
+    color: #F87C1D;
+    font-weight: bold;
+}
+
+.card-details .payment-instruction {
+    font-weight: 300;
+    size: 14px;
+    color: #B1B1B1;
+}
+
+.card-details .bank .bank-item h3 {
+    size: 18px;
+    color: #071C4D;
+    margin-bottom: 0;
+}
+
+.card-details .bank .bank-item p {
+    margin-bottom: 0;
+}
+
+.card-details .bank .bank-item .description {
+    margin-left: 10px;
+    overflow: hidden;
+    float: left;
+}
+
+.card-details .bank .bank-item .description p {
+    font-weight: normal;
+    font-size: 16px;
+    color: #071C4D;
+}
+
+.card-details .bank .bank-image {
+    width: 45px;
+    height: 45px;
+    float: left;
+}
+
+.card-details .disclaimer {
+    font-weight: 300;
+    font-size: 14px;
+    color: #B1B1B1;
+}
+
+.card-details .gj-datepicker .datepicker {
+    border-right: 0;
+}
+
+.card-details .gj-datepicker .input-group-append {
+    padding-right: 30px;
+}
+
+.card-details .btn-add-now {
+    width: 100%;
+    background-color: #071C4D;
+    color: #FFFFFF;
+}
+
+.card-details .btn-add-now:hover {
+    background-color: #2c4d9b;
+    color: #FFFFFF;
+}
+  
+/* Features */
+.features {
+    margin-top: 20px;
+}
+
+.features h3 {
+    font-size: 18px;
+    color: #071C4D;
+    margin-bottom: 0;
+}
+
+.features p {
+    margin-bottom: 0;
+}
+
+.features .description {
+    margin-left: 10px;
+    overflow: hidden;
+    float: left;
+}
+
+.features .features-image {
+    width: 45px;
+    height: 45px;
+    float: left;
+}
+
+/* Member */
+.member .member-image {
+    width: 50px;
+    height: 50px;
+}
+
+/* Join */
+.join-container {
+    margin-top: -16px;
+}
+
+.btn-join-now {
+    background-color: #F87C1D;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.btn-join-now:hover {
+    background-color: #FF9E53;
+    color: #FFFFFF;
+}

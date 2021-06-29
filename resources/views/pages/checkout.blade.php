@@ -1,5 +1,8 @@
 @extends('layouts.app')
 @section('title', 'Travelgo | Checkout')
+@section('style')
+    <link rel="stylesheet" href="{{url('css/checkout.css')}}">
+@endsection
 
 @section('content')
 <main>
@@ -157,7 +160,7 @@
                             <a href="{{ route('checkout-success', $item -> id) }}" class="btn btn-block btn-join-now py-2">Confirm Payment</a>
                         </div>
                         <div class="text-center">
-                            <a href="{{ route('package-detail', $item -> travel_package -> slug) }}" class="text-muted">Cancel Booking</a>
+                            <a href="{{ route('package-detail', $item->id)}}" class="text-muted">Cancel Booking</a>
                         </div>
                     </div>
                 </div>

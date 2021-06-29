@@ -8,6 +8,7 @@
         
         @stack('prepend-style')
         @include('includes.style')
+        @yield('style')
         @stack('addon-style')
         @livewireStyles
     </head>

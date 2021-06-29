@@ -1,8 +1,11 @@
 @extends('layouts.app')
 @section('title', 'Travelgo')
+@section('style')
+    <link rel="stylesheet" href="{{url('css/home.css')}}">
+@endsection
 
 @section('content')
-<header class="text-center">
+<header class="home text-center">
     <h1>Explore The Beauty<br>of Indonesia</h1>
     <p class="mt-3">You wish you never knew another country</p>
     <a href="#popular" class="btn btn-get-started px-4 py-2 mt-2">

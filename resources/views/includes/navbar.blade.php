@@ -10,11 +10,11 @@
             <li class="nav-item mx-md-2"><a href="{{url('/')}}" class="nav-link {{ Request::is('/') ? 'active' : ''}}">Home</a></li>
             <li class="nav-item mx-md-2"><a href="{{url('/package')}}" class="nav-link {{ Request::is('package/*') || Request::is('package') ? 'active' : ''}}">Package</a></li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle {{ Request::is('service/*') ? 'active' : ''}}" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Services
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Flight</a></li>
+                    <li><a class="dropdown-item" href="{{url('/service/flight')}}">Flight</a></li>
                     <li><a class="dropdown-item" href="#">Hotel</a></li>
                     <li><a class="dropdown-item" href="#">Tour</a></li>
                 </ul>
