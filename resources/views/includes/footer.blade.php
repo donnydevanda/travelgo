@@ -1,4 +1,4 @@
-<footer class="section-footer my-4 border-top">
+<footer class="section-footer mb-4 border-top">
     <div class="container pt-5 pb-5">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-3">

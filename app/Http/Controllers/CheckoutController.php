@@ -5,8 +5,6 @@ namespace App\Http\Controllers;
 use Mail;
 use App\Mail\TransactionSuccess;
 
-// use App\Transaction;
-// use App\TransactionDetail;
 use App\Models\Transaction;
 use App\Models\TransactionDetail;
 use App\Models\TravelPackage;

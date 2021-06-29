@@ -14,10 +14,13 @@
                 <form action="{{ route('package') }}" method="GET" role="search">
                     <input type="search" class="form-control rounded" name="search" id="search" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
                 </form>
+                @if ($searches != "")
+                    <p class="mt-1">Showing {{ count($searches) }} results</p>
+                @endif
             </div>
             @if ($searches != "")
             <div class="my-5">
-                <h2 class="section-popular-package">Search Result</h2>
+                <h2 class="section-popular-package" style="color: #ffffff;">Search Result</h2>
                 @if ($searches == "[]")
                     <div class="row my-5 pb-5">
                         <p class="section-popular-package h1 text-center">-- No Result Found --</h1>
@@ -43,7 +46,7 @@
             </div>
             @endif
             <div class="my-5">
-                <h2 class="{{$searches != "" ? "" : "section-popular-package"}}">Popular Destination</h2>
+                <h2 class="{{$searches != "" ? "" : "section-popular-package"}}" style="{{ $searches == "" ? "color: #ffffff;" : " " }}">Popular Destination</h2>
                 <section class="section-popular-content" id="popularContent">
                     <div class="section-popular-travel row justify-content-center">
                         @foreach ($populars as $popular)
