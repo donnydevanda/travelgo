@@ -8,6 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>Travelgo Admin</title>
+  @include('includes.meta')
 
   @include('includes.admin.style')
 

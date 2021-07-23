@@ -98,7 +98,7 @@
                 <div class="col-sm-6 col-md-6 col-lg-4">
                     <div class="card card-testimonial text-center">
                         <div class="testimonial-content">
-                            <img src="{{url('images/testi-1.png')}}" alt="testi-1" class="mb-4 rounded-circle">
+                            <img src="{{url('images/testi_1.png')}}" alt="testi_1" class="mb-4 rounded-circle">
                             <p class="h3 mb-4">Ken</p>
                             <p class="testimonial">
                                 " It was glorious and I couldn't<br>
@@ -114,7 +114,7 @@
                 <div class="col-sm-6 col-md-6 col-lg-4">
                     <div class="card card-testimonial text-center">
                         <div class="testimonial-content">
-                            <img src="{{url('images/testi-2.png')}}" alt="testi-2" class="mb-4 rounded-circle">
+                            <img src="{{url('images/testi_2.png')}}" alt="testi_2" class="mb-4 rounded-circle">
                             <p class="h3 mb-4">Shayna</p>
                             <p class="testimonial">
                                 " The trip was amazing and<br>
@@ -130,7 +130,7 @@
                 <div class="col-sm-6 col-md-6 col-lg-4">
                     <div class="card card-testimonial text-center">
                         <div class="testimonial-content">
-                            <img src="{{url('images/testi-3.png')}}" alt="testi-3" class="mb-4 rounded-circle">
+                            <img src="{{url('images/testi_3.png')}}" alt="testi_3" class="mb-4 rounded-circle">
                             <p class="h3 mb-4">Shabrina</p>
                             <p class="testimonial">
                                 " I loved it when the waves<br>

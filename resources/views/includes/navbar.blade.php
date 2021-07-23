@@ -19,7 +19,7 @@
                     <li><a class="dropdown-item" href="#">Tour</a></li>
                 </ul>
             </li>
-            <li class="nav-item mx-md-2"><a href="#" class="nav-link">Testimonial</a></li>
+            <li class="nav-item mx-md-2"><a href="#" class="nav-link">Blog</a></li>
             @auth
             @if (Auth::user()->roles == 'ADMIN')
                 <li class="nav-item mx-md-2"><a href="{{url('/admin')}}" class="nav-link">Admin</a></li>
