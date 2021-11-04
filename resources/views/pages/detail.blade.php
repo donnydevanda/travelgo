@@ -31,11 +31,11 @@
                                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="{{ Storage::url($item->galleries->first()->image) }}" class="d-block w-100" alt="...">
+                                            <img src="{{ url($item->galleries->first()->image) }}" class="d-block w-100" alt="...">
                                         </div>
                                         @foreach ($item->galleries as $gallery)
                                             <div class="carousel-item">
-                                                <img src="{{ Storage::url($gallery->image) }}" class="d-block w-100" alt="...">
+                                                <img src="{{ url($gallery->image) }}" class="d-block w-100" alt="...">
                                             </div>
                                         @endforeach
                                     </div>

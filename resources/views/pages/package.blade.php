@@ -31,7 +31,7 @@
                             @foreach ($searches as $search)
                             <div class="col-sm-6 col-md-4 col-lg-3">
                                 <div class="card-travel text-center d-flex flex-column py-5"
-                                style="background-image: url('{{ $search->galleries->count() ? Storage::url ($search -> galleries -> first() -> image) : '' }}');">
+                                style="background-image: url('{{ $search->galleries->count() ? url ($search -> galleries -> first() -> image) : '' }}');">
                                     <div class="travel-country">{{ $search->location }}</div>
                                     <div class="travel-location">{{ $search->title }}</div>
                                     <div class="travel-button">
@@ -52,7 +52,7 @@
                         @foreach ($populars as $popular)
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="card-travel text-center d-flex flex-column py-5"
-                            style="background-image: url('{{ $popular->galleries->count() ? Storage::url ($popular -> galleries -> first() -> image) : '' }}');">
+                            style="background-image: url('{{ $popular->galleries->count() ? url ($popular -> galleries -> first() -> image) : '' }}');">
                                 <div class="travel-country">{{ $popular->location }}</div>
                                 <div class="travel-location">{{ $popular->title }}</div>
                                 <div class="travel-button">
@@ -71,7 +71,7 @@
                         @foreach ($mountainBeaches as $mountainBeach)
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="card-travel text-center d-flex flex-column py-5"
-                            style="background-image: url('{{ $mountainBeach->galleries->count() ? Storage::url ($mountainBeach -> galleries -> first() -> image) : '' }}');">
+                            style="background-image: url('{{ $mountainBeach->galleries->count() ? url ($mountainBeach -> galleries -> first() -> image) : '' }}');">
                                 <div class="travel-country">{{ $mountainBeach->location }}</div>
                                 <div class="travel-location">{{ $mountainBeach->title }}</div>
                                 <div class="travel-button">

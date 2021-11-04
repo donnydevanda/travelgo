@@ -30,7 +30,7 @@
                             <td>{{$item -> id}}</td>
                             <td>{{$item -> title}}</td>
                             <td>{{$item -> location}}</td>
-                            <td><img src="{{ Storage::url($item->galleries->first()->image) }}" style="width: 200px"></td>
+                            <td><img src="{{ url($item->galleries->first()->image) }}" style="width: 200px"></td>
                             <td>{{$item -> departure_date}}</td>
                             <td>{{$item -> type}}</td>
                             <td>

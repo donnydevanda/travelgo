@@ -18,83 +18,83 @@ class GallerySeeder extends Seeder
     {
         DB::table('galleries')->insert([[
             'travel_packages_id' => '1',
-            'image' => '1a.webp',
+            'image' => 'images/1a.webp',
         ],
         [
             'travel_packages_id' => '1',
-            'image' => '1b.webp',
+            'image' => 'images/1b.webp',
         ],
         [
             'travel_packages_id' => '1',
-            'image' => '1c.webp',
+            'image' => 'images/1c.webp',
         ],
         [
             'travel_packages_id' => '2',
-            'image' => '2a.webp',
+            'image' => 'images/2a.webp',
         ],
         [
             'travel_packages_id' => '2',
-            'image' => '2b.webp',
+            'image' => 'images/2b.webp',
         ],
         [
             'travel_packages_id' => '2',
-            'image' => '2c.webp',
+            'image' => 'images/2c.webp',
         ],
         [
             'travel_packages_id' => '3',
-            'image' => '3a.webp',
+            'image' => 'images/3a.webp',
         ],
         [
             'travel_packages_id' => '3',
-            'image' => '3b.webp',
+            'image' => 'images/3b.webp',
         ],
         [
             'travel_packages_id' => '3',
-            'image' => '3c.webp',
+            'image' => 'images/3c.webp',
         ],
         [
             'travel_packages_id' => '4',
-            'image' => '4a.webp',
+            'image' => 'images/4a.webp',
         ],
         [
             'travel_packages_id' => '4',
-            'image' => '4b.webp',
+            'image' => 'images/4b.webp',
         ],
         [
             'travel_packages_id' => '4',
-            'image' => '4c.webp',
+            'image' => 'images/4c.webp',
         ],
         [
             'travel_packages_id' => '5',
-            'image' => '5a.webp',
+            'image' => 'images/5a.webp',
         ],
         [
             'travel_packages_id' => '5',
-            'image' => '5b.webp',
+            'image' => 'images/5b.webp',
         ],
         [
             'travel_packages_id' => '6',
-            'image' => '6a.webp',
+            'image' => 'images/6a.webp',
         ],
         [
             'travel_packages_id' => '6',
-            'image' => '6b.webp',
+            'image' => 'images/6b.webp',
         ],
         [
             'travel_packages_id' => '7',
-            'image' => '7a.webp',
+            'image' => 'images/7a.webp',
         ],
         [
             'travel_packages_id' => '7',
-            'image' => '7b.webp',
+            'image' => 'images/7b.webp',
         ],
         [
             'travel_packages_id' => '8',
-            'image' => '8a.webp',
+            'image' => 'images/8a.webp',
         ],
         [
             'travel_packages_id' => '8',
-            'image' => '8b.webp',
+            'image' => 'images/8b.webp',
         ],
     ]);
     }
