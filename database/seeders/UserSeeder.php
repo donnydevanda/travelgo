@@ -16,7 +16,7 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('Users')->insert([[
+        DB::table('users')->insert([[
             'username' => 'admin',
             'email' => 'admin@travelgo.com',
             'email_verified_at' => '2020-12-01',

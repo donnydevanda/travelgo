@@ -16,7 +16,7 @@ class GallerySeeder extends Seeder
      */
     public function run()
     {
-        DB::table('Galleries')->insert([[
+        DB::table('galleries')->insert([[
             'travel_packages_id' => '1',
             'image' => '1a.webp',
         ],
