@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Travelgo | Checkout')
 @section('style')
-    <link rel="stylesheet" href="{{url('css/checkout.css')}}">
+    <link rel="stylesheet" href="./checkout.css">
 @endsection
 
 @section('content')
