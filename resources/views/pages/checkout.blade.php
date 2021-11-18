@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Travelgo | Checkout')
 @section('style')
-    <link rel="stylesheet" href="./checkout.css">
+ <link rel="stylesheet" type="text/css" href="{{url('css/checkout.css')}}">
 @endsection
 
 @section('content')
@@ -59,7 +59,7 @@
                                             <td class="align-middle">{{ $detail->nationality }}</td>
                                             <td class="align-middle">{{ $detail->is_visa ? '30 Days' : 'N/A' }}</td>
                                             <td class="align-middle">{{ \Carbon\Carbon::createFromDate($detail->doe_passport) > \Carbon\Carbon::now() ? 'Active' : 'Inactive'}}</td>
-                                            <td class="align-middle"><a href="{{ route('checkout-remove', $detail->id) }}"><img src="{{url('images/ic_remove.png')}}" alt=""></a></td>
+                                            <td class="align-middle"><a href="{{ route('checkout-remove', $detail->id) }}"><img src="{{url('images/ic_remove.webp')}}" alt=""></a></td>
                                         </tr>
                                         @empty
                                             <tr>
@@ -140,7 +140,7 @@
                         <p class="payment-instruction">Please complete your payment before continue to travel.</p>
                         <div class="bank">
                             <div class="bank-item pb-3">
-                                <img src="{{url('images/ic_bank.png')}}" alt="" class="bank-image my-2">
+                                <img src="{{url('images/ic_bank.webp')}}" alt="" class="bank-image my-2">
                                 <div class="description">
                                     <h3>PT. Travelgo ID</h3>
                                     <p>5271 6789 8877 <br> Bank Central Asia</p>
@@ -148,7 +148,7 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="bank-item pb-3">
-                                <img src="{{url('images/ic_bank.png')}}" alt="" class="bank-image my-2">
+                                <img src="{{url('images/ic_bank.webp')}}" alt="" class="bank-image my-2">
                                 <div class="description">
                                     <h3>PT. Travelgo ID</h3>
                                     <p>6435 5555 6661 <br> Bank Mandiri</p>

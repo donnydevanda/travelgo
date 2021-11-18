@@ -1,7 +1,7 @@
 header {
     padding: 25vh 0 30vh 0;
     margin-top: -80px !important;
-    background-image: url("../images/img_flight.jpg");
+    background-image: url("../images/img_flight.webp");
     background-size: cover;
 }
 
@@ -21,24 +21,24 @@ header .h3 {
 }
 
 header .btn-orange {
-    background-color: #F87C1D;
-    color: #FFFFFF;
+    background-color: #f87c1d;
+    color: #ffffff;
 }
 
 header .btn-orange:hover {
-    background-color: #FF9E53;
-    color: #FFFFFF;
+    background-color: #ff9e53;
+    color: #ffffff;
 }
 
 header .btn-deal {
-    background-color: #071C4D;
-    color: #FFFFFF;
+    background-color: #071c4d;
+    color: #ffffff;
     font-weight: bold;
 }
-  
+
 header .btn-deal:hover {
     background-color: #2c4d9b;
-    color: #FFFFFF;
+    color: #ffffff;
     font-weight: bold;
 }
 

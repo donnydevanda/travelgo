@@ -21,7 +21,7 @@ use App\Http\Controllers\Admin\DashboardController;
 Route::get('/', [HomeController::class, 'index']) -> name('home');
 Route::get('/package', [PackageController::class, 'index']) -> name('package');
 Route::get('/package/detail/{id}', [PackageController::class, 'detail']) -> name('package-detail');
-Route::get('/service/flight', [ServiceController::class, 'flight']) -> name('service-flight');
+Route::get('/flight', [ServiceController::class, 'flight']) -> name('service-flight');
 Route::get('/checkout/{id}', [CheckoutController::class, 'index']) -> name('checkout') -> middleware(['auth', 'verified']);
 Route::post('/checkout/{id}', [CheckoutController::class, 'process']) -> name('checkout-post') -> middleware(['auth', 'verified']);
 Route::post('/checkout/create/{detail_id}', [CheckoutController::class, 'create']) -> name('checkout-create') -> middleware(['auth', 'verified']);

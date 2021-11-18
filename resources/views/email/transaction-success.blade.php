@@ -84,7 +84,7 @@
                         <tbody>
                           <tr>
                             <td style="width:160px;">
-                              <img alt="" height="auto" src="{{ url('images/logo.png') }}" style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="160" />
+                              <img alt="" height="auto" src="{{ url('images/logo.webp') }}" style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="160" />
                             </td>
                           </tr>
                         </tbody>
@@ -117,7 +117,7 @@
                         <tbody>
                           <tr>
                             <td style="width:550px;">
-                              <img alt="" height="auto" src="{{url("../images/img_hero.jpg")}}" style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="550" />
+                              <img alt="" height="auto" src="{{url("../images/img_hero.webp")}}" style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="550" />
                             </td>
                           </tr>
                         </tbody>
@@ -226,7 +226,7 @@
                       <table cellpadding="0" cellspacing="0" width="100%" border="0" style="color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:22px;table-layout:auto;width:100%;border:none;">
                         <tr>
                           <td style="width: 50px">
-                            <img src="{{ url('images/ic_support.png') }}" alt="" width="50px">
+                            <img src="{{ url('images/ic_support.webp') }}" alt="" width="50px">
                           </td>
                           <td style="font-size:18px; padding-left:10px; color: #071C4D
                         font-family: Assistant, Halvetica, Arial, sans-serif"> support@travelgo.com <br> 081122334455 </td>

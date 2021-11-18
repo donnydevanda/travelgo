@@ -1,214 +1,228 @@
 /* Header */
 header {
-  padding: 30vh 0 20vh 0;
-  margin-top: -80px !important;
-  background-image: url("../images/img_hero.jpg");
-  background-size: cover;
+    padding: 30vh 0 20vh 0;
+    margin-top: -80px !important;
+    background-image: url("../images/img_hero.webp");
+    background-size: cover;
 }
 
-header h1, header p {
-  color: #FFFFFF;
+header h1,
+header p {
+    color: #ffffff;
 }
 
 header h1 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
 }
 
 header p {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 header .btn-get-started {
-  background-color: #F87C1D;
-  color: #FFFFFF;
+    background-color: #f87c1d;
+    color: #ffffff;
 }
 
 header .btn-get-started:hover {
-  background-color: #FF9E53;
-  color: #FFFFFF;
+    background-color: #ff9e53;
+    color: #ffffff;
 }
 
 /* Section Stats */
 .section-stats {
-  margin-top: -56px;
+    margin-top: -56px;
 }
 
 .section-stats .stats-detail {
-  padding-top: 15px;
-  background-color: #FFFFFF;
-  padding-left: 60px;
+    padding-top: 15px;
+    background-color: #ffffff;
+    padding-left: 60px;
 }
 
 .section-stats .stats-detail .stats-detail-title {
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 0;
-  color: #071C4D;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #071c4d;
 }
 
 .section-stats .stats-detail p {
-  font-size: 20px;
-  font-weight: 300;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 /* Section Popular Heading */
 .section-popular {
-  background-color: #051334;
-  min-height: 480px;
-  margin-top: -50px;
-  margin-bottom: -230px;
+    background-color: #051334;
+    min-height: 480px;
+    margin-top: -50px;
+    margin-bottom: -230px;
 }
 
 .section-popular-package {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .section-popular .section-popular-heading {
-  margin-top: 100px;
-  margin-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-.section-popular h2, .section-popular p {
-  color: #FFFFFF;
+.section-popular h2,
+.section-popular p {
+    color: #ffffff;
 }
 
 .section-popular h2 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  font-size: 36px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
 }
 
 .section-popular p {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 /* Section Popular Content */
 .section-popular-content .section-popular-travel .card-travel {
-  min-height: 380px;
-  max-height: 500px;
-  background-color: #DDDDDD;
-  color: #FFFFFF;
-  background-size: cover;
-  margin-bottom: 30px;
+    min-height: 380px;
+    max-height: 500px;
+    background-color: #dddddd;
+    color: #ffffff;
+    background-size: cover;
+    margin-bottom: 30px;
 }
 
 .section-popular-content .section-popular-travel .travel-country {
-  font-size: 18px;
-  color: #FFFFFF;
+    font-size: 18px;
+    color: #ffffff;
 }
 
 .section-popular-content .section-popular-travel .travel-location {
-  font-size: 26px;
-  color: #FFFFFF;
+    font-size: 26px;
+    color: #ffffff;
 }
 
-.section-popular-content .section-popular-travel .travel-button .btn-travel-details {
-  background-color: #F87C1D;
-  color: #FFFFFF;
-  margin-top: 200px;
+.section-popular-content
+    .section-popular-travel
+    .travel-button
+    .btn-travel-details {
+    background-color: #f87c1d;
+    color: #ffffff;
+    margin-top: 200px;
 }
 
-.section-popular-content .section-popular-travel .travel-button .btn-travel-details:hover {
-  background-color: #FF9E53;
+.section-popular-content
+    .section-popular-travel
+    .travel-button
+    .btn-travel-details:hover {
+    background-color: #ff9e53;
 }
 
 /* Section Network */
 .section-networks {
-  background-color: #FFFFFF;
-  margin-top: 100px;
-  padding-bottom: 50px;
+    background-color: #ffffff;
+    margin-top: 100px;
+    padding-bottom: 50px;
 }
 
 .section-networks h2 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 .section-networks p {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 .section-networks img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 /* Section Testimonial Heading */
 .section-testimonial-heading {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#F7F9FF));
-  background: linear-gradient(#FFFFFF 0%, #F7F9FF 100%);
-  padding-top: 50px;
-  min-height: 500px;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#ffffff),
+        to(#f7f9ff)
+    );
+    background: linear-gradient(#ffffff 0%, #f7f9ff 100%);
+    padding-top: 50px;
+    min-height: 500px;
 }
 
 .section-testimonial-heading h2 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
 }
 
 .section-testimonial-heading p {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 /* Section Testimonial Content */
 .section-testimonial-content {
-  margin-top: -300px;
-  margin-bottom: 150px;
-  padding-top: 20px;
+    margin-top: -300px;
+    margin-bottom: 150px;
+    padding-top: 20px;
 }
 
 .section-testimonial-content img {
-  width: 120px;
+    width: 120px;
 }
 
 .section-testimonial-content .card-testimonial {
-  padding: 40px 20px 10px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+    padding: 40px 20px 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .section-testimonial-content .card-testimonial .testimonial-content {
-  min-height: 380px;
+    min-height: 380px;
 }
 
 .section-testimonial-content .testimonial {
-  font-weight: 200;
-  font-size: 26px;
-  color: #6E6E6E;
-  min-height: 160px;
-  max-height: 250px;
+    font-weight: 200;
+    font-size: 26px;
+    color: #6e6e6e;
+    min-height: 160px;
+    max-height: 250px;
 }
 
 .section-testimonial-content .trip-top {
-  font-weight: normal;
-  font-size: 22px;
-  color: #6E6E6E;
+    font-weight: normal;
+    font-size: 22px;
+    color: #6e6e6e;
 }
 
 .section-testimonial-content hr {
-  margin-left: -20px;
-  margin-right: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 .btn-need-help {
-  background-color: #F2F2F2;
-  color: #C3C3C3;
+    background-color: #f2f2f2;
+    color: #c3c3c3;
 }
 
 .btn-need-help:hover {
-  background-color: #FAFAFA;
-  color: #071C4D;
+    background-color: #fafafa;
+    color: #071c4d;
 }
 
 .btn-get-started {
-  background-color: #F87C1D;
-  color: #FFFFFF;
+    background-color: #f87c1d;
+    color: #ffffff;
 }
 
 .btn-get-started:hover {
-  background-color: #FF9E53;
-  color: #FFFFFF;
+    background-color: #ff9e53;
+    color: #ffffff;
 }

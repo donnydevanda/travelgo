@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Travelgo')
 @section('style')
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" type="text/css" href="{{url('css/home.css')}}">
 @endsection
 
 @section('content')
@@ -75,7 +75,7 @@
                     <p>Companies are trusted us<br>more than just a trip.</p>
                 </div>
                 <div class="col-md-8 text-center">
-                    <img src="{{url('images/logos_partner.png')}}" alt="partner-logo" class="img-partner">
+                    <img src="{{url('images/logos_partner.webp')}}" alt="partner-logo" class="img-partner">
                 </div>
             </div>
         </div>
@@ -98,7 +98,7 @@
                 <div class="col-sm-6 col-md-6 col-lg-4">
                     <div class="card card-testimonial text-center">
                         <div class="testimonial-content">
-                            <img src="{{url('images/testi_1.png')}}" alt="testi_1" class="mb-4 rounded-circle">
+                            <img src="{{url('images/testi_1.webp')}}" alt="testi_1" class="mb-4 rounded-circle">
                             <p class="h3 mb-4">Ken</p>
                             <p class="testimonial">
                                 " It was glorious and I couldn't<br>
@@ -114,7 +114,7 @@
                 <div class="col-sm-6 col-md-6 col-lg-4">
                     <div class="card card-testimonial text-center">
                         <div class="testimonial-content">
-                            <img src="{{url('images/testi_2.png')}}" alt="testi_2" class="mb-4 rounded-circle">
+                            <img src="{{url('images/testi_2.webp')}}" alt="testi_2" class="mb-4 rounded-circle">
                             <p class="h3 mb-4">Shayna</p>
                             <p class="testimonial">
                                 " The trip was amazing and<br>
@@ -130,7 +130,7 @@
                 <div class="col-sm-6 col-md-6 col-lg-4">
                     <div class="card card-testimonial text-center">
                         <div class="testimonial-content">
-                            <img src="{{url('images/testi_3.png')}}" alt="testi_3" class="mb-4 rounded-circle">
+                            <img src="{{url('images/testi_3.webp')}}" alt="testi_3" class="mb-4 rounded-circle">
                             <p class="h3 mb-4">Shabrina</p>
                             <p class="testimonial">
                                 " I loved it when the waves<br>

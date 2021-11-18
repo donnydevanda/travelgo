@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Travelgo | Package Details')
 @section('style')
-    <link rel="stylesheet" href="./css/package.css">
+    <link rel="stylesheet" type="text/css" href="{{url('css/package.css')}}">
 @endsection
 
 @section('content')
@@ -55,7 +55,7 @@
                         <div class="features row">
                             <div class="col-md-4 my-1 border-start">
                                 <div class="description">
-                                    <img src="{{url('images/ic_event.png')}}" alt="" class="features-image">
+                                    <img src="{{url('images/ic_event.webp')}}" alt="" class="features-image">
                                     <div class="description">
                                         <h3>Featured Event</h3>
                                         <p>{{ $item->featured_event }}</p>
@@ -64,7 +64,7 @@
                             </div>
                             <div class="col-md-4 my-1 border-start">
                                 <div class="description">
-                                    <img src="{{url('images/ic_language.png')}}" alt="" class="features-image">
+                                    <img src="{{url('images/ic_language.webp')}}" alt="" class="features-image">
                                     <div class="description">
                                         <h3>Language</h3>
                                         <p>{{ $item->language }}</p>
@@ -73,7 +73,7 @@
                             </div>
                             <div class="col-md-4 my-1 border-start">
                                 <div class="description">
-                                    <img src="{{url('images/ic_foods.png')}}" alt="" class="features-image">
+                                    <img src="{{url('images/ic_foods.webp')}}" alt="" class="features-image">
                                     <div class="description">
                                         <h3>Foods</h3>
                                         <p>{{ $item->foods }}</p>
@@ -87,11 +87,11 @@
                     <div class="card card-details">
                         <h2><b>Members are going</b></h2>
                         <div class="members my-3">
-                            <img src="{{url('images/member_1.png')}}" alt="" class="member_image mr-1">
-                            <img src="{{url('images/member_2.png')}}" alt="" class="member_image mr-1">
-                            <img src="{{url('images/member_3.png')}}" alt="" class="member_image mr-1">
-                            <img src="{{url('images/member_4.png')}}" alt="" class="member_image mr-1">
-                            <img src="{{url('images/member_etc.png')}}" alt="" class="member_image mr-1">
+                            <img src="{{url('images/member_1.webp')}}" alt="" class="member_image mr-1">
+                            <img src="{{url('images/member_2.webp')}}" alt="" class="member_image mr-1">
+                            <img src="{{url('images/member_3.webp')}}" alt="" class="member_image mr-1">
+                            <img src="{{url('images/member_4.webp')}}" alt="" class="member_image mr-1">
+                            <img src="{{url('images/member_etc.webp')}}" alt="" class="member_image mr-1">
                         </div>
                         <hr>
                         <h2>Trip information</h2>

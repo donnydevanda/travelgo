@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-        <title>@yield('title')</title>
         @include('includes.meta')
-    
+
         @stack('prepend-style')
         @include('includes.style')
         @yield('style')
@@ -17,13 +16,13 @@
         @else
             @include('includes.navbar')
         @endif
-        
+
         @if(Request::is('user/*'))
             {{ $slot }}
         @else
             @yield('content')
         @endif
-        
+
         @include('includes.footer')
 
         @stack('prepend-script')

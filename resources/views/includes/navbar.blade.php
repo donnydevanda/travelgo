@@ -1,4 +1,4 @@
-<nav class="container navbar navbar-expand-lg navbar-light bg-light max-w-7xl">
+<nav class="container navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="{{url('/')}}">Travelgo</a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,7 +14,7 @@
                     Services
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="{{url('/service/flight')}}">Flight</a></li>
+                    <li><a class="dropdown-item" href="{{url('/flight')}}">Flight</a></li>
                     <li><a class="dropdown-item" href="#">Hotel</a></li>
                     <li><a class="dropdown-item" href="#">Tour</a></li>
                 </ul>
@@ -24,17 +24,21 @@
             @if (Auth::user()->roles == 'ADMIN')
                 <li class="nav-item mx-md-2"><a href="{{url('/admin')}}" class="nav-link">Admin</a></li>
             @else
-                <li class="nav-item mx-md-2"><a href="{{ route('profile.show') }}" class="nav-link {{ Request::is('user/*') ? 'active' : ''}}">Account</a></li>  
+                <li class="nav-item mx-md-2"><a href="{{ route('profile.show') }}" class="nav-link {{ Request::is('user/*') ? 'active' : ''}}">Account</a></li>
             @endif
-            <form class="" action="{{url('logout')}}" method="POST">
-                @csrf
-                <button class="btn btn-login px-5 py-2" type="submit">Logout</button>
-            </form>
+                <li>
+                    <form class="" action="{{url('logout')}}" method="POST">
+                        @csrf
+                        <button class="btn btn-login px-5 py-2" type="submit">Logout</button>
+                    </form>
+                </li>
             @endauth
             @guest
-                <button class="btn btn-login px-4 py-2 mx-md-2" type="button" onclick="event.preventDefault(); location.href='{{url('login')}}';">Login</button>
-                <button class="btn btn-secondary" type="button" onclick="event.preventDefault(); location.href='{{url('register')}}';">Register</button>
-            @endguest    
-        </ul>    
+                <li>
+                    <button class="btn btn-login px-4 py-2 mx-md-2" type="button" onclick="event.preventDefault(); location.href='{{url('login')}}';">Login</button>
+                    <button class="btn btn-secondary" type="button" onclick="event.preventDefault(); location.href='{{url('register')}}';">Register</button>
+                </li>
+            @endguest
+        </ul>
     </div>
 </nav>

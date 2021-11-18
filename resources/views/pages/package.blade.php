@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Travelgo | Package')
 @section('style')
-    <link rel="stylesheet" href="./css/package.css">
+    <link rel="stylesheet" type="text/css" href="{{url('css/package.css')}}">
 @endsection
 
 @section('content')
@@ -26,7 +26,7 @@
                         <p class="section-popular-package h1 text-center">-- No Result Found --</h1>
                     </div>
                 @else
-                    <section class="section-popular-content" id="popularContent">
+                    <section class="section-popular-content">
                         <div class="section-popular-travel row justify-content-center">
                             @foreach ($searches as $search)
                             <div class="col-sm-6 col-md-4 col-lg-3">
@@ -47,7 +47,7 @@
             @endif
             <div class="my-5">
                 <h2 class="{{$searches != "" ? "" : "section-popular-package"}}" style="{{ $searches == "" ? "color: #ffffff;" : " " }}">Popular Destination</h2>
-                <section class="section-popular-content" id="popularContent">
+                <section class="section-popular-content">
                     <div class="section-popular-travel row justify-content-center">
                         @foreach ($populars as $popular)
                         <div class="col-sm-6 col-md-4 col-lg-3">
@@ -66,7 +66,7 @@
             </div>
             <div class="my-5">
                 <h2>Mountain or Beach?</h2>
-                <section class="section-popular-content" id="popularContent">
+                <section class="section-popular-content">
                     <div class="section-popular-travel row justify-content-center">
                         @foreach ($mountainBeaches as $mountainBeach)
                         <div class="col-sm-6 col-md-4 col-lg-3">
